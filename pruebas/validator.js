@@ -3,16 +3,19 @@
     console.log(arr.reduce(numberSum));*/
 
     const numberSum = (numberDigit) =>{
+      console.log('numero aun no convertido ' + numberDigit)
       let partConverter = numberDigit.toString().split('');
       let accumulate = 0;
+      console.log('Numero convertido '+partConverter)
+      console.log('tamaño array: '+ partConverter.length)
       for(i = 0 ; i < partConverter.length; i++)
       {
         accumulate += parseInt(partConverter[i]);
+        console.log('posicion en suma ' + i);
       }
-      return accumulate;
+      return 'suma ' + accumulate;
     }
-
-
+  
     let creditCardNumber = prompt('Ingrese su N° de Tarjeta: ')
     console.log(creditCardNumber);
     
@@ -21,7 +24,7 @@
     console.log(creditCardNumber);
     let inverterCard = creditCardNumber.split('').reverse();
     console.log(inverterCard);
-
+    console.log('tamaño array: '+ inverterCard.length)
     for(i = 0 ; i < inverterCard.length; i++)
     {
       // obteniendo posicion
@@ -30,8 +33,9 @@
         let doubleNumber = inverterCard[i] * 2;
         console.log(i + ' ' + doubleNumber);
         
-        //let digitSum = numberSum(doubleNumber);
-        //console.log(digitSum);
+        let digitSum = numberSum(doubleNumber);
+        console.log(digitSum);
+        console.log('posicion en funcion general '+i);
       }
     }
 };
