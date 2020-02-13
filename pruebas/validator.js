@@ -1,10 +1,7 @@
-    /*const numberSum = (acumulator, currentValue ) => parse(acumulator) + parseInt(currentValue);
-    let arr = [2,3,4];
-    console.log(arr.reduce(numberSum));*/
 
 const numberSum = (numberDigit) => {
   let accumulate = 0;
-  
+    
   for(let i = 0 ; i < numberDigit.length; i++)
   {
     accumulate += parseInt(numberDigit[i]);
@@ -21,7 +18,6 @@ const isValid = (creditCardNumber) => {
 
   for(let i = 0 ; i < inverterCard.length; i++)
   {
-    // obteniendo posicion
     if(i % 2 !== 0)
     {
       let doubleNumber = inverterCard[i] * 2;
@@ -31,27 +27,50 @@ const isValid = (creditCardNumber) => {
 
       let digitSum = numberSum(arrayDoubleNumber);
       console.log(digitSum);
+      inverterCard[i] = digitSum.toString();
     }
-    console.log('posicion en funcion general '+i);
-    console.log(inverterCard);
+  }
+  console.log(inverterCard)
+  let totalAmount = numberSum(inverterCard);
+  console.log(totalAmount);
+  if(totalAmount % 10 === 0)
+  {
+    console.log(true);
+  }
+  else{
+    console.log(false);
   }
 };
 
     
 const maskify = (creditCardNumber) => {
   let numberCard = creditCardNumber.toString().split('');
-  let acumulate = 0;
+  let acumulate = '';
 
-  for(i = 0 ; i < numberCard.length ; i++)
+  for( let i = numberCard.length - 1 ; i >= 0 ; i--)
   {
-    console.log(numberCard[i])
-    numberCard[i] = '#';
-    //let numberMaskify = creditCardNumber.replace(numberCard[i],'#')
-    acumulate += numberCard[i];
-    //console.log(numberMaskify)
-    console.log(acumulate);
+    if(i > numberCard.length - 5)
+    {
+      console.log(i + ' '+numberCard[i]);
+    }
+    else{
+      numberCard[i] = '#';
+      //acumulate += numberCard[i]
+      console.log(i + ' ' + numberCard[i]);
+    }
   }
-  console.log(acumulate);
+  
+  numberMaskify = numberCard.join('');
+  console.log(numberMaskify);
+
+  for(let i = 0 ; i < numberCard.length; i++)
+  {
+    acumulate += numberCard[i];
+  }
+  console.log('Tu numero de tarjeta es: '+acumulate);
+  console.log(numberCard);
+  
+
 }
     
 
@@ -62,4 +81,4 @@ let creditCardNumber = prompt('Ingrese su N° de Tarjeta: ')
 // console.log(creditCardNumber);
 isValid(creditCardNumber);
 
-// maskify(creditCardNumber)
+maskify(creditCardNumber)
