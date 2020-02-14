@@ -11,34 +11,42 @@ const numberSum = (numberDigit) => {
 };
   
 const isValid = (creditCardNumber) => {
-  // console.log(creditCardNumber);
-  let inverterCard = creditCardNumber.split('').reverse();
-  console.log(inverterCard);
-  console.log('tamaño array: '+ inverterCard.length)
-
-  for(let i = 0 ; i < inverterCard.length; i++)
+  // console.log(creditCardNumber.length);
+  if(creditCardNumber.length !== 16)
   {
-    if(i % 2 !== 0)
+    // console.log('Vuelva a Ingresar')
+    return false;
+  }
+  else
+  {
+    let inverterCard = creditCardNumber.split('').reverse();
+    // console.log(inverterCard);
+    // console.log('tamaño array: '+ inverterCard.length)
+
+    for(let i = 0 ; i < inverterCard.length; i++)
     {
-      let doubleNumber = inverterCard[i] * 2;
-      console.log(i + ' ' + doubleNumber);
-      
-      let arrayDoubleNumber = doubleNumber.toString().split('');
+      if(i % 2 !== 0)
+      {
+        let doubleNumber = inverterCard[i] * 2;
+        // console.log(i + ' ' + doubleNumber);
+        
+        let arrayDoubleNumber = doubleNumber.toString().split('');
 
-      let digitSum = numberSum(arrayDoubleNumber);
-      console.log(digitSum);
-      inverterCard[i] = digitSum.toString();
+        let digitSum = numberSum(arrayDoubleNumber);
+        // console.log(digitSum);
+        inverterCard[i] = digitSum.toString();
+      }
     }
-  }
-  console.log(inverterCard)
-  let totalAmount = numberSum(inverterCard);
-  console.log(totalAmount);
-  if(totalAmount % 10 === 0)
-  {
-    console.log(true);
-  }
-  else{
-    console.log(false);
+    // console.log(inverterCard)
+    let totalAmount = numberSum(inverterCard);
+    // console.log(totalAmount);
+    if(totalAmount % 10 === 0)
+    {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 };
 
@@ -73,12 +81,14 @@ const maskify = (creditCardNumber) => {
 
 }
     
-
+//=================================================== INDEX:JS
 // Llamando funciones
 
 let creditCardNumber = prompt('Ingrese su N° de Tarjeta: ')
 
 // console.log(creditCardNumber);
-isValid(creditCardNumber);
+let tarjetaValida = isValid(creditCardNumber);
 
-maskify(creditCardNumber)
+console.log(tarjetaValida);
+
+// maskify(creditCardNumber)
