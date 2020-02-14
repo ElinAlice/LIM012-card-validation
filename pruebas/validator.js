@@ -63,7 +63,6 @@ const maskify = (creditCardNumber) => {
     }
     else{
       numberCard[i] = '#';
-      //acumulate += numberCard[i]
       console.log(i + ' ' + numberCard[i]);
     }
   }
@@ -77,8 +76,6 @@ const maskify = (creditCardNumber) => {
   }
   console.log('Tu numero de tarjeta es: '+acumulate);
   console.log(numberCard);
-  
-
 }
     
 //=================================================== INDEX:JS
