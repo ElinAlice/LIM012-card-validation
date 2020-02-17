@@ -12,7 +12,7 @@ const validator = {
 
   isValid : (creditCardNumber) => {
   // console.log(creditCardNumber.length);
-  if(creditCardNumber.length >= 16)
+  if(creditCardNumber.length > 16)
   {
     console.log('Vuelva a Ingresar')
     return false;
@@ -72,6 +72,7 @@ const validator = {
     }
     console.log('Tu numero de tarjeta es: '+acumulate);
     console.log(numberCard);
+    return acumulate;
   }
 
 };
