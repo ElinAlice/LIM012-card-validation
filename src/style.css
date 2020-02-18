@@ -1,6 +1,10 @@
+#containerEncabezado{
+    font-family: 'Oleo Script', cursive;
+}
 body{
     margin: 0;
     padding: 0;
+    background: url(https://mujeres.es/wp-content/uploads/2014/04/tiendas-de-ropa.jpg);
     font-family: Georgia;
     display: flex;
     justify-content: center;
@@ -11,8 +15,14 @@ body{
 #frmContainer{
     width: 500px;
     height: 500px;
-    background: lightblue;
+    background: rgba(187, 178, 58, 0.349);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+    #frmRegistry{
+        padding-left: 50px;
+        padding-top: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }

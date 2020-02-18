@@ -5,27 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tarjeta de crédito válida</title>
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header></header>
+  <header>
+    <div id="containerEncabezado">Elin</div>
+  </header>
   <main>
     <div id="frmContainer">
       <form action="" id="frmRegistry" class="frmRegistroValidator">
         <h3>Fomulario de registro</h3>
+        <br>
+        <br>
         Nombres y apellidos: <br>
         <input type="text" id="txtFullName"><br>
+        <br>
         Dirección de domicilio: <br>
         <input type="text" id="txtAddress"><br>
+        <br>
         Teléfono: <br>
         <input type="text" id="txtPhone"><br>
+        <br>
         E-mail: <br>
         <input type="text" id="txtEmail"><br>
+        <br>
         <h5>Para activar sus compras online, necesita validar su tarjeta</h5>
         Por favor, ingrese el número de su tarjeta de crédito:<br>
         <input type="text" id="txtCreditCardNumber"><br>
-        <button type="button" id="btnRegistry">Registrar</button>
+        <br>
+        <div id="containerInvalidCard">
+          <h5>* Su tarjeta es inválida, por favor, ingrese de nuevo.</h5>
+        </div>
+        <button type="button" id="btnRegistry">Registrar</button><br>
+        <br>
       </form>
+    </div>
+    <div id="containerVerifyRegistration">
+      <h1>Detalle de tu registro</h1>
+      <h3>Ahora ya puedes comenzar con tus compras!!</h3>
+      <strong>Nombres y apellidos:</strong>
+      <p id="showFullName"></p>
+      <strong>Dirección de domicilio:</strong>
+      <p id="showAddress"></p>
+      <strong>Teléfono:</strong>
+      <p id="showPhone"></p>
+      <strong>E-mail:</strong>
+      <p id="showEmail"></p>
+      <br>
+      <strong>Tu registro fue con la tarjeta de crédito: </strong>
+      <h5 id="showCreditCardNumber"></h5>
+
     </div>
   </main>
   <footer></footer>
