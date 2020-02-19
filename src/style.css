@@ -3,7 +3,7 @@ body{
     padding: 0;
     background: url(../images/fondoRegistro.jpg);
     background-repeat: no-repeat;
-    background-size: 1349px 800px;
+    background-size: 1349px 850px;
 }
 
 header{
@@ -14,30 +14,73 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/logoPortadaAmarillo.png);
+    background-image: url(../images/logoPortadaRojo.png);
     background-size: 40% 80%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 main{
-    font-family: Georgia;
+    font-family: 'Alice', serif;
+    font-size:medium;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    color: rgb(24, 22, 22);
 }
 
-#frmContainer{
+.clsContainer{
     width: 500px;
-    height: 500px;
-    background: rgba(187, 178, 58, 0.349);
+    height: 600px;
+    background: rgba(104, 4, 4, 0.384);
     display: flex;
     justify-content: center;
     align-items: center;
 }
     #frmRegistry{
-        padding-left: 50px;
-        padding-top: 10px;
-        justify-content: flex-start;
+        padding-left: 55px;
+        padding-top: 8px;
+        justify-content: flex;
         align-items: center;
     }
+    #hRecommendation{
+        padding-right: 40px;
+    }
+    input[type=text]{
+        width: 80%;
+        padding: 8px 20px;
+        margin: 4px 0 2px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(48, 7, 7, 0.925);
+    }
+    #hNotice{
+        color: rgb(241, 7, 7);
+        padding-right: 20px;
+    }
+    .clsTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #btnRegistry{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(48, 7, 7, 0.925);
+        border-radius: 50px;
+        padding: 8px 20px;
+        margin: 4px 0 2px;
+        background: rgb(192, 148, 53);
+        text-align: center;
+        position: absolute;
+        left: 57%;
+        
+    }
+    
+#containerVerifyRegistration{
+    padding-left: 55px;
+    padding-top: 10px;
+    justify-content: flex;
+    align-items: center;
+}

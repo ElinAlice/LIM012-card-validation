@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tarjeta de crédito válida</title>
-  <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,9 +15,9 @@
     <br>
   </header>
   <main>
-    <div id="frmContainer">
+    <div id="frmContainer" class="clsContainer">
       <form action="" id="frmRegistry" class="frmRegistroValidator">
-        <h3>Fomulario de registro</h3>
+        <h1 class="clsTitle">Fomulario de registro</h1>
         Nombres y apellidos: <br>
         <input type="text" id="txtFullName"><br>
         <br>
@@ -29,20 +29,19 @@
         <br>
         E-mail: <br>
         <input type="text" id="txtEmail"><br>
-        <br>
-        <h5>Para activar sus compras online, necesita validar su tarjeta</h5>
-        Por favor, ingrese el número de su tarjeta de crédito:<br>
+        <h3 id="hRecommendation">Para activar tus compras online, necesitas validar su tarjeta.</h3>
+        Por favor, ingresa el número de tu tarjeta de crédito:<br>
         <input type="text" id="txtCreditCardNumber"><br>
-        <br>
         <div id="containerInvalidCard">
-          <h5>* Su tarjeta es inválida, por favor, ingrese de nuevo.</h5>
+          <h5 id="hNotice">* Tu tarjeta de crédito es inválida. 
+            Por favor, ingresa de nuevo.</h5>
         </div>
-        <button type="button" id="btnRegistry">Registrar</button><br>
+        <button type="button" id="btnRegistry"> <strong> Registrar</strong></button><br>
         <br>
       </form>
     </div>
-    <div id="containerVerifyRegistration">
-      <h1>Detalle de tu registro</h1>
+    <div id="containerVerifyRegistration" class="clsContainer">
+      <h1 class="clsTitle">Detalle de tu registro</h1>
       <h3>Ahora ya puedes comenzar con tus compras!!</h3>
       <strong>Nombres y apellidos:</strong>
       <p id="showFullName"></p>
