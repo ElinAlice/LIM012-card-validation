@@ -1,14 +1,29 @@
-#containerEncabezado{
-    font-family: 'Oleo Script', cursive;
-}
 body{
     margin: 0;
     padding: 0;
-    background: url(https://mujeres.es/wp-content/uploads/2014/04/tiendas-de-ropa.jpg);
-    font-family: Georgia;
+    background: url(../images/fondoRegistro.jpg);
+    background-repeat: no-repeat;
+    background-size: 1349px 800px;
+}
+
+header{
+    height: 180px;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/logoPortadaAmarillo.png);
+    background-size: 40% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main{
+    font-family: Georgia;
+    display: flex;
+    justify-content: center;
     min-height: 100vh;
 }
 
