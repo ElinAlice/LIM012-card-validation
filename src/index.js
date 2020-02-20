@@ -2,16 +2,18 @@ import validator from './validator.js';
 
 const btnRegistry = document.getElementById('btnRegistry');
 const containerInvalidCard = document.getElementById('containerInvalidCard');
+const containerEmpty = document.getElementById('containerEmpty');
 const containerForm = document.getElementById('frmContainer');
 const containerVerifyRegistration = document.getElementById('containerVerifyRegistration');
 
 containerInvalidCard.style.display = 'none';
+containerEmpty.style.display = 'none';
 containerForm.style.display = 'block';
 containerVerifyRegistration.style.display = 'none';
 
 btnRegistry.addEventListener('click', () => {
 
-    let creditCardNumber = document.getElementById('txtCreditCardNumber').value;
+    let creditCardNumber = (document.getElementById('txtCreditCardNumber').value).trim();
     let cardValidation = validator.isValid(creditCardNumber);
     let maskedCard = validator.maskify(creditCardNumber);
 
@@ -20,7 +22,11 @@ btnRegistry.addEventListener('click', () => {
     let txtPhone = document.getElementById('txtPhone').value;
     let txtEmail = document.getElementById('txtEmail').value;
 
-    if(cardValidation === true)
+    if(creditCardNumber.length === 0)
+    {
+        containerEmpty.style.display = 'block';
+    }
+    else if(cardValidation === true)
     {
         containerVerifyRegistration.style.display = 'block';
         containerForm.style.display = 'none';
@@ -37,9 +43,9 @@ btnRegistry.addEventListener('click', () => {
         showEmail.innerHTML = txtEmail;
         showCreditCardNumber.innerHTML = maskedCard;
     }
-    else{
+    else {
         containerInvalidCard.style.display = 'block';
-        creditCardNumber = '';
+        containerEmpty.style.display = 'none';
     }
 });
 
