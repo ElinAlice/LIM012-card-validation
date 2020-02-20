@@ -2,9 +2,8 @@
 
 ## 1. Resúmen
 
-Es necesario tener seguridad al realizar una compra online, tanto para la misma tienda 
-que ofrece sus productos y para los clientes que las adquieren, es importate validar su 
-tarjeta de crédito para verificar si el cliente es real.
+Importante para usuarios que les guste las compras en línea, en una tienda online de moda,
+podrán realizar su registro como clientes y validar su tarjeta de crédito para poder adquirir sus productos.
 
 ## 2. Proyecto Final 
  --- imagen
@@ -18,16 +17,7 @@ Objetivo:
     - Validación de tarjeta de crédito.
     - Realizar un registro como cliente.
 
-Los usuarios a los que va dirigido mi proyecto, son para aquellas tiendas virtuales, 
-que tienen la necesidad si sus compradores son reales. 
-Objetivo: 
-    - Validación de tarjeta de crédito.
-    - Verificar la veracidad de registro de los clientes.
-
 ### 2. Solución a los Problemas / Necesidades
-
-Existen cuentas falsas por internet, por lo que al momento que la tienda online tenga el registro
-de un nuevo cliente, podrá verificar si esel cliente es real por medio de la validación de su tarjeta de crédito.
 
 Para que el usuario quiera adquirir los productos que ofrece la tienda online, puede realizar su registro 
 como cliente llenando un formulario con sus datos personales, y lo más importante validar 
