@@ -24,23 +24,31 @@
         Dirección de domicilio: <br>
         <input type="text" id="txtAddress"><br>
         <br>
-        Teléfono: <br>
-        <input type="text" id="txtPhone"><br>
-        <br>
-        E-mail: <br>
-        <input type="text" id="txtEmail"><br>
+        <div id="containerPhoneEmail">  
+          <div>
+            Teléfono: <br>
+            <input type="text" id="txtPhone">
+          </div>
+          <div>
+            E-mail: <br>
+            <input type="text" id="txtEmail"><br>
+          </div>
+        </div>
         <h3 id="hRecommendation">Para activar tus compras online, necesitas validar su tarjeta.</h3>
         Por favor, ingresa el número de tu tarjeta de crédito:<br>
-        <input type="text" id="txtCreditCardNumber"><br>
-        <div id="containerInvalidCard">
-          <h5 id="hNotice">* Tu tarjeta de crédito es inválida. 
-            Por favor, ingresa de nuevo.</h5>
+        <div id="iconTarjet">
+          <div>
+            <input type="text" id="txtCreditCardNumber">
+          </div>
+          <div id="containerInvalidCard">
+            <h5 id="hNotice">* Tu tarjeta de crédito es inválida. 
+              Por favor, ingresa de nuevo.</h5>
+          </div>
+          <div id="containerEmpty">
+            <h5>* Por favor, ingresa el número de tu tarjeta.</h5>
+          </div>
+          <button type="button" id="btnRegistry"> <strong> Registrar</strong></button><br>
         </div>
-        <div id="containerEmpty">
-          <h5>* Por favor, ingresa el número de tu tarjeta.</h5>
-        </div>
-        <button type="button" id="btnRegistry"> <strong> Registrar</strong></button><br>
-        <br>
       </form>
     </div>
     <div id="containerVerifyRegistration" class="clsContainer">
