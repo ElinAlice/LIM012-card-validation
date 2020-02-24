@@ -48,11 +48,8 @@ const validator = {
   
     for( let i = numberCard.length - 1 ; i >= 0 ; i--)
     {
-      if(i > numberCard.length - 5)
+      if(i < numberCard.length - 4)
       {
-        console.log(i + ' '+numberCard[i]);
-      }
-      else{
         numberCard[i] = '#';
       }
     }

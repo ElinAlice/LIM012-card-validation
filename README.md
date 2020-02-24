@@ -2,20 +2,21 @@
 
 ## 1. Resúmen
 
-Importante para usuarios que les guste las compras en línea, en una tienda online de moda,
+Importante para usuarios que prefieren las compras en línea, en una tienda online de moda,
 podrán realizar su registro como clientes y validar su tarjeta de crédito para poder adquirir sus productos.
 
 ## 2. Proyecto Final 
- --- imagen
+ ![Pagina 1: Formulario de registro (Validación de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/pantallaFormulario.png)
+ ![Pagina 2: Detalles de Registro (Muestra enmascarada el N° de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/pantallaRegistro.png)
 
  ## 3. Investigación UX:
 
  ### 1. Usuarios y Objetivos
-Los usuarios  lo que va dirigido mi proyecto, son para aquellas personas que les
-gusta realizar las compras en línea, en este caso en una tienda online de moda.
+Los usuarios a los que va dirigido mi proyecto, son para aquellas personas que les
+gusta realizar las compras online, en este caso en una tienda online de moda.
 Objetivo: 
-    - Validación de tarjeta de crédito.
-    - Realizar un registro como cliente.
+* Validación de tarjeta de crédito.
+* Realizar un registro como cliente.
 
 ### 2. Solución a los Problemas / Necesidades
 
@@ -24,31 +25,12 @@ como cliente llenando un formulario con sus datos personales, y lo más importan
 su tarjeta de crédito, para evidenciar que es un usuario real.
 
 ### 3. Primer prototipo (Papel)
-
-
+![Formulario de registro y detalles de Registro](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/prototipoPapel.png)
 ### 4. Resúmen del feedback
-
-
+ * Replanteamiento de los prototipos, se eliminó pantallas para solo centrarse en el objetivo principal del proyecto.
+ * Mejorar la idea y la mejor forma de dar solución al problema del usuario.
+ * Correciones de prototipo.
 
 ### 5. Prototipo final
-
-
-### 
-#### General
-
-##### `README.md`
-
-Debe contener lo siguiente:
-
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
-* Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
-
+![Prototipo 1: Formulario de registro (Validación de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/prototipoFormulario.jpeg)
+![Prototipo 2: Detalles de Registro (Muestra enmascarada el N° de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/prototipoDetalleRegistro.jpeg)

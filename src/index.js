@@ -18,7 +18,6 @@ btnRegistry.addEventListener('click', () => {
     let maskedCard = validator.maskify(creditCardNumber);
 
     let txtFullName = document.getElementById('txtFullName').value;
-    let txtAddress = document.getElementById('txtAddress').value;
     let txtPhone = document.getElementById('txtPhone').value;
     let txtEmail = document.getElementById('txtEmail').value;
 
@@ -32,13 +31,11 @@ btnRegistry.addEventListener('click', () => {
         containerForm.style.display = 'none';
 
         let showFullName = document.getElementById('showFullName');
-        let showAddress = document.getElementById('showAddress');
         let showPhone = document.getElementById('showPhone');
         let showEmail = document.getElementById('showEmail');
         let showCreditCardNumber = document.getElementById('showCreditCardNumber');
 
         showFullName.innerHTML = txtFullName;
-        showAddress.innerHTML = txtAddress;
         showPhone.innerHTML = txtPhone;
         showEmail.innerHTML = txtEmail;
         showCreditCardNumber.innerHTML = maskedCard;

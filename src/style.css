@@ -3,12 +3,13 @@ body{
     padding: 0;
     background: url(../images/fondoRegistro.jpg);
     background-repeat: no-repeat;
-    background-size: 1349px 900px;
+    background-size: cover;
     font-family: 'Alice', serif;
 }
 
 header{
     height: 150px;
+    margin: 5px 0 5px;
     text-align: center;
     font-family: 'Oleo Script', cursive;
     font-size: 50px;
@@ -16,23 +17,30 @@ header{
     justify-content: center;
     align-items: center;
     background-image: url(../images/logoPortadaAmarillo.png);
-    background-size: 40% 80%;
+    background-size: 90% 80%;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (min-width: 768px) {
+    header { 
+        background-size: 40% 80%;
+    }
+ }
 
 main{
     font-size:medium;
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     color: #212024;
 }
 
 .clsContainer{
     width: 500px;
-    height: 630px;
     background: #f7b61d4d;
+    margin: 0 1rem 0 1rem ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,106 +48,190 @@ main{
     border-radius: 30px;
 }
     #frmRegistry{
-        padding-left: 55px;
-        padding-top: 5px;
-        justify-content: flex;
-        align-items: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 5px;        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     #frmRegistry h5{
         margin-top: 2px;
     }
-    #hRecommendation{
-        padding-right: 40px;
-    }
     input[type=text]{
-        width: 80%;
+        box-sizing: border-box;
+        width: 100%;
         padding: 8px 20px;
         margin: 4px 0 2px;
         background: transparent;
         border: none;
         border-bottom: 2px solid #afa939;
+    }
+    .containerEmail {
+        padding-left: 0.5rem;
+        box-sizing: border-box;
     }
     #containerPhoneEmail{
         display: flex;
     }
     #containerPhoneEmail input[type=text]{
-        width: 71%;
+        width: 100%;
         padding: 8px 20px;
         margin: 4px 0 2px;
         background: transparent;
         border: none;
         border-bottom: 2px solid #afa939;
     }
-    #hNotice{
+    #containerInvalidCard{
         color: rgb(122, 5, 5);
         padding-right: 20px;
     }
     #containerEmpty{
         color: rgb(17, 78, 12);
-        padding-right: 20px;
+        padding-right: 10px;
+    }
+    #containerInconCreditCart{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     #iconTarjet{
         margin-top: 10px;
         margin-left: 50px;
-        width: 280px;
+        width: 110px;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/icon.png);
+        background-size: 100px 100px;
+        background-repeat: no-repeat;
+    }
+    #containerInconCreditCart input[type=text]{
+        width: 100%;
+        padding: 8px 55px;
+        margin: 10px 0px 10px;
+        background:#8383835e;
+        border: 2px  solid #afa939;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #containerTextIcon{
+        flex-direction: column;
+        width: 100%;
+    }
+    #containerDate{
+        width: 100%;
         height: 160px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../images/tarjetIcon.png);
-        background-size: 100% 150%;
-        background-repeat: no-repeat;
-        background-position: left;
-        flex-direction: column;
-        position: absolute;
     }
-    #iconTarjet input[type=text]{
-        width: 71%;
-        padding: 8px 20px;
-        margin: 0px 0 2px;
-        background: #e0dfc7;
-        border: none;
-        border-bottom: 2px solid #afa939;
+    #containerExpirationCvv{
+        display: flex;
+        flex-direction: column;
+    }
+    #containerExpirationDate{
+        display: flex;
+        flex-direction: column;
+    }
+    #containerCvv{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    #containerCvv input[type=text]{
+        width: 30%;
+        padding: 4px 8px;
+        margin: 10px 0px 10px;
+        background:#8383835e;
+        border: 2px  solid #afa939;
         display: flex;
         justify-content: center;
-        align-items: center;
-        font: center;
     }
     .clsTitle{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #btnRegistry{
+    #containerButton {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 1rem;
+    }
+    #btnRegistry{        
         color: #212024;
         border-radius: 50px;
         padding: 8px 20px;
-        margin: 100px 0px 2px;
+        margin: 0px 0px 2px;
         background: #afa939;
-        text-align: center;
-        position: absolute;
-        left: 45%;
-        
+        text-align: center;        
     }
     .clsContainer h3{
         justify-content: flex;
         align-items: center;
         text-align: center;
     }
+    .selecMonthYear{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #8383835e;
+        padding: 4px 10px;
+        margin: 10px 0px 2px;
+        border: 2px solid #afa939;
+        
+    }
     
 #containerVerifyRegistration{
     padding-left: 50px;
     padding-top: 40px;
-    justify-content: flex;
+    justify-content: center;
     align-items: center;
+    color: #212024;
+
 }
     #showCreditCardNumber{
-        justify-content: flex;
+        justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    #containerShowFullName{
+        width: 500px;
+        height: 80px;
+    }
+    #containerShowPhoneEmail{
+        width: 500px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #imageTarjet{
+        width: 350px;
+        height: 250px;
+        background: url(../images/tarjetIcon.png);
+        background-size: 350px 250px;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 85px;
+    }
+    #imageTarjet h2{
+        margin-top: 50px;
+        padding: 8px 23px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #149ea7;
+        
+    }
+    #containerVerifyRegistration h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+        margin-top: 0px;
     }
 
 #containerFooter{
@@ -165,7 +257,6 @@ main{
     #dateFooter h4{
         margin-bottom: 2px;
         margin-top: 5px;
-
     }
 
     
