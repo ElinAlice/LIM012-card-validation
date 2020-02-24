@@ -6,8 +6,8 @@ Importante para usuarios que prefieren las compras en línea, en una tienda onli
 podrán realizar su registro como clientes y validar su tarjeta de crédito para poder adquirir sus productos.
 
 ## 2. Proyecto Final 
- ![Pagina 1: Formulario de registro (Validación de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/pantallaFormulario.png)
- ![Pagina 2: Detalles de Registro (Muestra enmascarada el N° de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/pantallaRegistro.png)
+ ![Pagina 1: Formulario de registro (Validación de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/blob/master/src/images/pantallaFormulario.png)
+ ![Pagina 2: Detalles de Registro (Muestra enmascarada el N° de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/blob/master/src/images/pantallaRegistro.png)
 
  ## 3. Investigación UX:
 
@@ -25,12 +25,12 @@ como cliente llenando un formulario con sus datos personales, y lo más importan
 su tarjeta de crédito, para evidenciar que es un usuario real.
 
 ### 3. Primer prototipo (Papel)
-![Formulario de registro y detalles de Registro](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/prototipoPapel.png)
+![Formulario de registro y detalles de Registro](https://github.com/ElinAlice/LIM012-card-validation/blob/master/src/images/prototipoPapel.png)
 ### 4. Resúmen del feedback
  * Replanteamiento de los prototipos, se eliminó pantallas para solo centrarse en el objetivo principal del proyecto.
  * Mejorar la idea y la mejor forma de dar solución al problema del usuario.
  * Correciones de prototipo.
 
 ### 5. Prototipo final
-![Prototipo 1: Formulario de registro (Validación de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/prototipoFormulario.jpeg)
-![Prototipo 2: Detalles de Registro (Muestra enmascarada el N° de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/tree/master/src/images/prototipoDetalleRegistro.jpeg)
+![Prototipo 1: Formulario de registro (Validación de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/blob/master/src/images/prototipoFormulario.jpeg)
+![Prototipo 2: Detalles de Registro (Muestra enmascarada el N° de la Tarjeta de Crédito)](https://github.com/ElinAlice/LIM012-card-validation/blob/master/src/images/prototipoDetalleRegistro.jpeg)
