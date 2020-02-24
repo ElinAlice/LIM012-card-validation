@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(../images/fondoRegistro.jpg);
+    background: url(./images/fondoRegistro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Alice', serif;
@@ -16,7 +16,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/logoPortadaAmarillo.png);
+    background-image: url(./images/logoPortadaAmarillo.png);
     background-size: 90% 80%;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +103,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../images/icon.png);
+        background-image: url(./images/icon.png);
         background-size: 100px 100px;
         background-repeat: no-repeat;
     }
@@ -209,7 +209,7 @@ main{
     #imageTarjet{
         width: 350px;
         height: 250px;
-        background: url(../images/tarjetIcon.png);
+        background: url(./images/tarjetIcon.png);
         background-size: 350px 250px;
         background-repeat: no-repeat;
         display: flex;
