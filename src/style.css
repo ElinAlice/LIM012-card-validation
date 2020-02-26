@@ -36,7 +36,9 @@ main{
     min-height: 100vh;
     color: #212024;
 }
-
+.clsContainerNone{
+    display: none;
+}
 .clsContainer{
     width: 500px;
     background: #f7b61d4d;
@@ -46,6 +48,10 @@ main{
     align-items: center;
     margin-bottom: 50px;
     border-radius: 30px;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
 }
     #frmRegistry{
         padding-left: 3rem;
@@ -183,7 +189,7 @@ main{
         
     }
     
-#containerVerifyRegistration{
+#containerVerify{
     padding-left: 50px;
     padding-top: 40px;
     justify-content: center;
@@ -205,6 +211,9 @@ main{
         height: 100px;
         display: flex;
         justify-content: space-between;
+    }
+    #showNameCreditCard{
+        width: 100%;
     }
     #imageTarjet{
         width: 350px;

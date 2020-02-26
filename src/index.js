@@ -6,10 +6,10 @@ const containerEmpty = document.getElementById('containerEmpty');
 const containerForm = document.getElementById('frmContainer');
 const containerVerifyRegistration = document.getElementById('containerVerifyRegistration');
 
-containerInvalidCard.style.display = 'none';
-containerEmpty.style.display = 'none';
-containerForm.style.display = 'block';
-containerVerifyRegistration.style.display = 'none';
+// containerInvalidCard.style.display = 'none';
+// containerEmpty.style.display = 'none';
+// containerForm.style.display = 'block';
+// containerVerifyRegistration.style.display = 'none';
 
 btnRegistry.addEventListener('click', () => {
 
@@ -23,12 +23,17 @@ btnRegistry.addEventListener('click', () => {
 
     if(creditCardNumber.length === 0)
     {
-        containerEmpty.style.display = 'block';
+        containerEmpty.classList.remove('clsContainerNone');
+        containerInvalidCard.classList.add('clsContainerNone');
+        // containerEmpty.style.display = 'block';
     }
     else if(cardValidation === true)
     {
-        containerVerifyRegistration.style.display = 'block';
-        containerForm.style.display = 'none';
+        containerVerifyRegistration.classList.remove('clsContainerNone');
+        containerForm.classList.add('clsContainerNone');
+        
+        // containerVerifyRegistration.style.display = 'block';
+        // containerForm.style.display = 'none';
 
         let showFullName = document.getElementById('showFullName');
         let showPhone = document.getElementById('showPhone');
@@ -41,9 +46,10 @@ btnRegistry.addEventListener('click', () => {
         showCreditCardNumber.innerHTML = maskedCard;
     }
     else {
-        containerInvalidCard.style.display = 'block';
-        containerEmpty.style.display = 'none';
+        containerInvalidCard.classList.remove('clsContainerNone');
+        containerEmpty.classList.add('clsContainerNone');
+        // containerInvalidCard.style.display = 'block';
+        // containerEmpty.style.display = 'none';
     }
 });
 
-console.log(validator);
