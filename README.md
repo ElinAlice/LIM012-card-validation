@@ -82,4 +82,4 @@ seguro para la tienda y podra tener acceso a adquirir los productos que desee.
 
 * [x] Organizar y dividir el código en módulos (Modularización).
 * [x] Uso de identificadores descriptivos (Nomenclatura | Semántica).
-* [x] Uso de linter para seguir buenas prácticas (ESLINT).
+* [ ] Uso de linter para seguir buenas prácticas (ESLINT).

@@ -61,10 +61,11 @@ main{
         justify-content: center;
         flex-direction: column;
     }
-    #frmRegistry h5{
-        margin-top: 2px;
+    #hRecommendation{
+        margin-top: 15px;
     }
-    input[type=text]{
+
+    .inputText{
         box-sizing: border-box;
         width: 100%;
         padding: 8px 20px;
@@ -72,22 +73,16 @@ main{
         background: transparent;
         border: none;
         border-bottom: 2px solid #afa939;
+    }
+
+    #containerPhoneEmail{
+        display: flex;
     }
     .containerEmail {
         padding-left: 0.5rem;
         box-sizing: border-box;
     }
-    #containerPhoneEmail{
-        display: flex;
-    }
-    #containerPhoneEmail input[type=text]{
-        width: 100%;
-        padding: 8px 20px;
-        margin: 4px 0 2px;
-        background: transparent;
-        border: none;
-        border-bottom: 2px solid #afa939;
-    }
+
     #containerInvalidCard{
         color: rgb(122, 5, 5);
         padding-right: 20px;
@@ -95,6 +90,10 @@ main{
     #containerEmpty{
         color: rgb(17, 78, 12);
         padding-right: 10px;
+    }
+    .hNotice{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
     #containerInconCreditCart{
         display: flex;
@@ -113,15 +112,10 @@ main{
         background-size: 100px 100px;
         background-repeat: no-repeat;
     }
-    #containerInconCreditCart input[type=text]{
-        width: 100%;
+    #txtCreditCardNumber{
         padding: 8px 55px;
         margin: 10px 0px 10px;
         background:#8383835e;
-        border: 2px  solid #afa939;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     #containerTextIcon{
         flex-direction: column;
@@ -145,14 +139,11 @@ main{
         flex-direction: column;
         margin-left: 10px;
     }
-    #containerCvv input[type=text]{
+    #txtCvv{
         width: 30%;
         padding: 4px 8px;
         margin: 10px 0px 10px;
         background:#8383835e;
-        border: 2px  solid #afa939;
-        display: flex;
-        justify-content: center;
     }
     .clsTitle{
         display: flex;

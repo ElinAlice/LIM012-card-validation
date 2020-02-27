@@ -18,28 +18,28 @@
         <form action="" id="frmRegistry" class="frmRegistroValidator">
           <h1 class="clsTitle">Realiza tu registro</h1>
           Nombres y apellidos: <br>
-          <input type="text" id="txtFullName"><br>
+          <input type="text" id="txtFullName" class="inputText"><br>
           <div id="containerPhoneEmail">  
             <div>
               Teléfono: <br>
-              <input type="text" id="txtPhone">
+              <input type="text" id="txtPhone" class="inputText">
             </div>
             <div class="containerEmail">
               E-mail: <br>
-              <input type="text" id="txtEmail"><br>
+              <input type="text" id="txtEmail" class="inputText"><br>
             </div>
           </div>
           <h3 id="hRecommendation">Para activar tus compras online, necesitas validar su tarjeta de crédito.</h3>
           N° de tarjeta:<br>
           <div id="containerInconCreditCart">
             <div id="containerTextIcon">
-              <input type="text" id="txtCreditCardNumber" maxlength="16">
+              <input type="text" id="txtCreditCardNumber" maxlength="16" class="inputText">
               <div id="containerInvalidCard" class="clsContainerNone">
-                <h5 id="hNotice">* Tu tarjeta de crédito es inválida. 
+                <h5 class="hNotice">* Tu tarjeta de crédito es inválida. 
                   Por favor, ingresa de nuevo.</h5>
               </div>
               <div id="containerEmpty" class="clsContainerNone">
-                <h5>* Por favor, ingresa el número de tu tarjeta.</h5>
+                <h5 class="hNotice">* Por favor, ingresa el número de tu tarjeta.</h5>
               </div>
               <div id="containerDate">
                 <div id="containerExpirationCvv">
@@ -80,7 +80,7 @@
                   </div> <br>
                   <div id="containerCvv">
                     <div>CVV: </div> 
-                    <input type="text" id="txtCvv">
+                    <input type="text" id="txtCvv" class="inputText">
                   </div>
                 </div>
                 <div id="iconTarjet">
@@ -123,9 +123,6 @@
     </div>
   </main>
   <footer id="containerFooter">
-      <!-- <div id="titleFooter">
-        <h3>Contáctanos:</h3>
-      </div> -->
       <div id="dateFooter">
         <h4>051-987878787 // elincompras@fashion.com</h4>
       </div>
